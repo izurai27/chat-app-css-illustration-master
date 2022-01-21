@@ -78,8 +78,8 @@ body {
   background-color: #9B3BF7;
   z-index: -9;
   border-radius: 0 0 90% 0;
-  background-image: -webkit-gradient(linear, top right to bottom left, from(#8838ff), color-stop(#8838ff), to(#e942ff));
-  background-image: linear-gradient(bottom left to top right, #8838ff, #8838ff, #e942ff);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#BC3FFF), to(#953AFF));
+  background-image: linear-gradient(180deg, #BC3FFF, #953AFF);
 }
 
 .container::after {
@@ -89,9 +89,10 @@ body {
   position: absolute;
   left: 50vw;
   bottom: 0;
-  background-color: #d5d1d8;
+  background-color: #D5D2DB;
   z-index: -9;
   border-radius: 90% 0 0 0;
+  background-image: linear-gradient(135deg, #D3D3D5 0%, #F9F4FA 40%, #F9F4FA 100%);
 }
 
 .phonecontainer {
@@ -131,6 +132,19 @@ body {
   padding-right: 15px;
   padding-top: 30px;
   z-index: 99;
+  position: relative;
+  color: white;
+}
+
+.phonecontainer .banner::before {
+  content: "";
+  height: 18px;
+  width: 129px;
+  position: absolute;
+  background-color: white;
+  top: 0;
+  border-radius: 0 0 15px 15px;
+  left: 60px;
 }
 
 .phonecontainer .banner .avatar {
@@ -150,6 +164,15 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-right: 30px;
+}
+
+.phonecontainer .banner .name {
+  font-size: 11px;
+}
+
+.phonecontainer .banner .status {
+  font-size: 8px;
 }
 
 .phonecontainer .left {
@@ -235,11 +258,36 @@ body {
   border-radius: 15px 15px 15px 15px;
   margin: 15px 7px 7px 7px;
   padding-left: 19px;
+  padding-right: 5px;
   font-size: 9px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .phonecontainer .input .placeholder {
   color: #c6cacd;
+}
+
+.phonecontainer .input .sendBtn {
+  width: 24px;
+  height: 24px;
+  background-color: #3F2854;
+  border-radius: 100%;
+  color: white;
+  font-size: 14px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 h1 {
