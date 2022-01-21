@@ -53,12 +53,14 @@ table {
 }
 
 body {
-  font-family: rubik;
+  font-family: rubik,sans-serif;
 }
 
 .container {
   background-color: #FAFAFA;
   height: 100%;
+  padding-top: 64px;
+  border: 1px solid magenta;
 }
 
 .phonecontainer {
@@ -72,7 +74,6 @@ body {
   width: 247px;
   border: 10px solid white;
   margin: auto;
-  margin-top: 64px;
   border-radius: 26px 26px 0 0;
 }
 
@@ -115,17 +116,35 @@ body {
 
 .phonecontainer .left {
   width: 128px;
-  height: 34px;
+  height: auto;
   background-color: #ECE5F5;
   margin-top: 11px;
   overflow: hidden;
-  border-radius: 5px 5px 5px 2px;
+  border-radius: 15px 15px 15px 2px;
   font-size: 8px;
   padding: 8px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   color: #9241c8;
   margin-left: 7px;
+  line-height: 1.5em;
+}
+
+.phonecontainer .quotation {
+  background-color: #923CFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 15px;
+  color: #FFB8FF;
+}
+
+.phonecontainer .quotation .price {
+  color: white;
+  font-weight: bold;
 }
 
 .phonecontainer .right {
@@ -133,11 +152,10 @@ body {
       align-self: flex-end;
   margin-right: 7px;
   width: 128px;
-  height: 34px;
   background-color: #ECE5F5;
   margin-top: 11px;
   overflow: hidden;
-  border-radius: 5px 5px 2px 5px;
+  border-radius: 15px 15px 2px 15px;
   font-size: 8px;
   padding: 8px;
   -webkit-box-sizing: border-box;
@@ -160,5 +178,46 @@ body {
   height: 40px;
   border-radius: 5px 5px 5px 5px;
   margin-top: 16px;
+  margin-left: 7px;
+}
+
+.phonecontainer .input {
+  height: 34px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 15px 15px 15px 15px;
+  margin: 15px 7px 7px 7px;
+  padding-left: 19px;
+  font-size: 9px;
+}
+
+.phonecontainer .input .placeholder {
+  color: #c6cacd;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: left;
+  margin-left: 42px;
+  margin-top: 72px;
+  margin-bottom: 41px;
+  color: #3e2753;
+}
+
+p {
+  font-size: 15px;
+  margin: 0 42px 42px 42px;
+  text-align: center;
+  line-height: 1.5em;
+  color: #a39daa;
 }
 /*# sourceMappingURL=style.css.map */
