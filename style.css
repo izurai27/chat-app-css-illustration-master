@@ -1,0 +1,164 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: rubik;
+}
+
+.container {
+  background-color: #FAFAFA;
+  height: 100%;
+}
+
+.phonecontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 247px;
+  border: 10px solid white;
+  margin: auto;
+  margin-top: 64px;
+  border-radius: 26px 26px 0 0;
+}
+
+.phonecontainer .banner {
+  height: 66px;
+  background-color: #923CFF;
+  border-radius: 14px 14px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 30px;
+}
+
+.phonecontainer .banner .avatar {
+  width: 24pt;
+  height: 24pt;
+  border-radius: 100%;
+  border: 1px solid white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.phonecontainer .banner .namestatus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.phonecontainer .left {
+  width: 128px;
+  height: 34px;
+  background-color: #ECE5F5;
+  margin-top: 11px;
+  overflow: hidden;
+  border-radius: 5px 5px 5px 2px;
+  font-size: 8px;
+  padding: 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #9241c8;
+  margin-left: 7px;
+}
+
+.phonecontainer .right {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-right: 7px;
+  width: 128px;
+  height: 34px;
+  background-color: #ECE5F5;
+  margin-top: 11px;
+  overflow: hidden;
+  border-radius: 5px 5px 2px 5px;
+  font-size: 8px;
+  padding: 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #6e5d7e;
+}
+
+.phonecontainer .rightImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 7px;
+}
+
+.phonecontainer .rightImg .dogImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px 5px 5px 5px;
+  margin-top: 16px;
+}
+/*# sourceMappingURL=style.css.map */
