@@ -15,7 +15,8 @@ body{
     position:relative;
     z-index:99;
     margin:0;
-
+    overflow: hidden;
+    
     &::before{
         width:70vw;
         height:499px;
